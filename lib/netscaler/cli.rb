@@ -219,7 +219,6 @@ module Netscaler
         end
         string :port, "The port number that an individual service in bound to (used when scoping the action to an individual service in a service group)." do
           depends_on :action
-          end
         end
         string :delay, "The delay (in seconds) to wait before disabled services transition to Out of Service. Default is 0 seconds (immediately)." do
           depends_on :action
